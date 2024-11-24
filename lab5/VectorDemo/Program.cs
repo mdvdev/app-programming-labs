@@ -15,12 +15,6 @@ public static class Assert
         if (expected != actual)
             throw new Exception($"Assert.Equal Failed: Expected {expected}, but got {actual}");
     }
-
-    public static void True(bool condition)
-    {
-        if (!condition)
-            throw new Exception("Assert.True Failed: Condition is not true");
-    }
 }
 
 class Program
@@ -85,7 +79,7 @@ class Program
     // Test 2: Multiplying each component of the vector by a number
     static void TestMultiplyNumber()
     {
-        var vector = new MathVector(new double[] { 1, 2, 3 });
+        IMathVector vector = new MathVector(new double[] { 1, 2, 3 });
         var multiplyWithNumber = vector.MultiplyNumber(2);
         Assert.Equal(2, multiplyWithNumber[0]);
         Assert.Equal(4, multiplyWithNumber[1]);

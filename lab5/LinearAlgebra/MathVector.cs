@@ -8,7 +8,21 @@ public class MathVector(double[] components) : IMathVector
 
     public int Dimensions => _components.Length;
 
-    public double this[int i] { get => _components[i]; set => _components[i] = value; }
+    public double this[int i]
+    {
+        get
+        {
+            if (i < 0 || i >= Dimensions)
+                throw new IndexOutOfRangeException();
+            return _components[i];
+        }
+        set
+        {
+            if (i < 0 || i >= Dimensions)
+                throw new IndexOutOfRangeException();
+            _components[i] = value;
+        }
+    }
     
     public double Length => Math.Sqrt(_components.Select(x => x * x).Sum());
 
