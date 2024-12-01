@@ -38,8 +38,8 @@ public class MathVector(double[] components) : IMathVector
 
     public IMathVector Sum(IMathVector vector)
     {
-        if (vector.Dimensions != Dimensions)
-            throw new ArgumentException("Dimensions must be the same length");
+        ArgumentNullException.ThrowIfNull(vector);
+        ValidateDimensions(Dimensions, vector.Dimensions);
         
         var result = new double[Dimensions];
         for (var i = 0; i < Dimensions; i++)
@@ -50,8 +50,8 @@ public class MathVector(double[] components) : IMathVector
 
     public IMathVector Multiply(IMathVector vector)
     {
-        if (vector.Dimensions != Dimensions)
-            throw new ArgumentException("Dimensions must be the same length");
+        ArgumentNullException.ThrowIfNull(vector);
+        ValidateDimensions(Dimensions, vector.Dimensions);
         
         var result = new double[Dimensions];
         for (var i = 0; i < Dimensions; i++)
@@ -62,8 +62,8 @@ public class MathVector(double[] components) : IMathVector
 
     public double ScalarMultiply(IMathVector vector)
     {
-        if (vector.Dimensions != Dimensions)
-            throw new ArgumentException("Dimensions must be the same length");
+        ArgumentNullException.ThrowIfNull(vector);
+        ValidateDimensions(Dimensions, vector.Dimensions);
         
         var result = 0.0;
         for (var i = 0; i < Dimensions; i++)
@@ -74,9 +74,9 @@ public class MathVector(double[] components) : IMathVector
 
     public double CalcDistance(IMathVector vector)
     {
-        if (vector.Dimensions != Dimensions)
-            throw new ArgumentException("Dimensions must be the same length");
-
+        ArgumentNullException.ThrowIfNull(vector);
+        ValidateDimensions(Dimensions, vector.Dimensions);
+        
         var result = 0.0;
         for (var i = 0; i < Dimensions; i++)
             result += Math.Pow(_components[i] - vector[i], 2);
@@ -101,8 +101,8 @@ public class MathVector(double[] components) : IMathVector
 
     public static IMathVector operator -(MathVector v1, MathVector v2)
     {
-        if (v1.Dimensions != v2.Dimensions)
-            throw new ArgumentException("Dimensions must be the same length");
+        ArgumentNullException.ThrowIfNull(v2);
+        ValidateDimensions(v1.Dimensions, v2.Dimensions);
         
         var result = new double[v1.Dimensions];
         for (var i = 0; i < v1.Dimensions; i++)
@@ -128,8 +128,8 @@ public class MathVector(double[] components) : IMathVector
 
     public static IMathVector operator /(MathVector v1, MathVector v2)
     {
-        if (v1.Dimensions != v2.Dimensions)
-            throw new ArgumentException("Dimensions must be the same length");
+        ArgumentNullException.ThrowIfNull(v2);
+        ValidateDimensions(v1.Dimensions, v2.Dimensions);
 
         var result = new double[v1.Dimensions];
         for (var i = 0; i < v1.Dimensions; i++)
@@ -153,5 +153,13 @@ public class MathVector(double[] components) : IMathVector
     public static double operator %(MathVector v1, MathVector v2)
     {
         return v1.ScalarMultiply(v2);
+    }
+
+    private static void ValidateDimensions(int dimension1, int dimension2)
+    {
+        if (dimension1 != dimension2)
+        {
+            throw new ArgumentException("Dimensions must be the same length");
+        }
     }
 }

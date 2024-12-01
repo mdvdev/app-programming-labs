@@ -23,9 +23,9 @@ public class MathVectorTests
     }
 
     [Fact]
-    public void Indexer_ValidIndex_ShouldReturnValue()
+    public void GetIndexer_ValidIndex_ShouldReturnValue()
     {
-        var vector = new MathVector(new double[] { 1, 2, 3 });
+        var vector = new MathVector([1, 2, 3]);
 
         var value = vector[1];
 
@@ -33,9 +33,9 @@ public class MathVectorTests
     }
 
     [Fact]
-    public void Indexer_NegativeIndex_ShouldThrowIndexOutOfRangeException()
+    public void GetIndexer_NegativeIndex_ShouldThrowIndexOutOfRangeException()
     {
-        var vector = new MathVector(new double[] { 1, 2, 3 });
+        var vector = new MathVector([1, 2, 3]);
 
         Action act = () => _ = vector[-1];
 
@@ -43,9 +43,9 @@ public class MathVectorTests
     }
 
     [Fact]
-    public void Indexer_IndexOutOfRange_ShouldThrowIndexOutOfRangeException()
+    public void GetIndexer_IndexOutOfRange_ShouldThrowIndexOutOfRangeException()
     {
-        var vector = new MathVector(new double[] { 1, 2, 3 });
+        var vector = new MathVector([1, 2, 3]);
 
         Action act = () => _ = vector[3];
 
@@ -53,9 +53,49 @@ public class MathVectorTests
     }
 
     [Fact]
+    public void SetIndexer_ValidIndex_ShouldReturnValue()
+    {
+        var vector = new MathVector([1, 2, 3]);
+
+        vector[1] = 4;
+        
+        Assert.Equal(4, vector[1]);
+    }
+
+    [Fact]
+    public void SetIndexer_NegativeIndex_ShouldThrowIndexOutOfRangeException()
+    {
+        var vector = new MathVector([1, 2, 3]);
+
+        Action act = () => vector[-1] = 4;
+        
+        Assert.Throws<IndexOutOfRangeException>(act);
+    }
+
+    [Fact]
+    public void SetIndexer_IndexOutOfRange_ShouldThrowIndexOutOfRangeException()
+    {
+        var vector = new MathVector([1, 2, 3]);
+        
+        Action act = () => vector[3] = 4;
+        
+        Assert.Throws<IndexOutOfRangeException>(act);
+    }
+
+    [Fact]
+    public void Length_ShouldReturnCorrectLength()
+    {
+        var vector = new MathVector([1, 2, 3]);
+        
+        var length = vector.Length;
+        
+        Assert.Equal(Math.Sqrt(1 + 4 + 9), length);
+    }
+
+    [Fact]
     public void SumNumber_ShouldAddNumberToEachComponent_FirstElement()
     {
-        var vector = new MathVector(new double[] { 1, 2, 3 });
+        var vector = new MathVector([1, 2, 3]);
 
         var result = vector.SumNumber(2);
 
@@ -65,7 +105,7 @@ public class MathVectorTests
     [Fact]
     public void MultiplyNumber_ShouldMultiplyEachComponent_FirstElement()
     {
-        var vector = new MathVector(new double[] { 1, 2, 3 });
+        var vector = new MathVector([1, 2, 3]);
 
         var result = vector.MultiplyNumber(3);
 
@@ -75,8 +115,8 @@ public class MathVectorTests
     [Fact]
     public void Sum_VectorsWithSameDimensions_ShouldAddComponents_FirstElement()
     {
-        var vector1 = new MathVector(new double[] { 1, 2, 3 });
-        var vector2 = new MathVector(new double[] { 4, 5, 6 });
+        var vector1 = new MathVector([1, 2, 3]);
+        var vector2 = new MathVector([4, 5, 6]);
 
         var result = vector1.Sum(vector2);
 
@@ -86,8 +126,8 @@ public class MathVectorTests
     [Fact]
     public void Sum_VectorsWithDifferentDimensions_ShouldThrowArgumentException()
     {
-        var vector1 = new MathVector(new double[] { 1, 2 });
-        var vector2 = new MathVector(new double[] { 1, 2, 3 });
+        var vector1 = new MathVector([1, 2]);
+        var vector2 = new MathVector([1, 2, 3]);
 
         Action act = () => vector1.Sum(vector2);
 
@@ -95,10 +135,21 @@ public class MathVectorTests
     }
 
     [Fact]
+    public void Sum_NullVector_ShouldThrowArgumentNullException()
+    {
+        var vector1 = new MathVector([1, 2, 3]);
+        IMathVector vector2 = null;
+        
+        Action act = () => vector1.Sum(vector2);
+        
+        Assert.Throws<ArgumentNullException>(act);
+    }
+    
+    [Fact]
     public void Multiply_VectorsWithSameDimensions_ShouldAddComponents_FirstElement()
     {
-        var vector1 = new MathVector(new double[] { 1, 2, 3 });
-        var vector2 = new MathVector(new double[] { 4, 5, 6 });
+        var vector1 = new MathVector([1, 2, 3]);
+        var vector2 = new MathVector([4, 5, 6]);
         
         var result = vector1.Multiply(vector2);
         
@@ -108,19 +159,30 @@ public class MathVectorTests
     [Fact]
     public void Multiply_VectorsWithDifferentDimensions_ShouldThrowArgumentException()
     {
-        var vector1 = new MathVector(new double[] { 1, 2 });
-        var vector2 = new MathVector(new double[] { 1, 2, 3 });
+        var vector1 = new MathVector([1, 2]);
+        var vector2 = new MathVector([1, 2, 3]);
         
         Action act = () => vector1.Multiply(vector2);
         
         Assert.Throws<ArgumentException>(act);
     }
+    
+    [Fact]
+    public void Multiply_NullVector_ShouldThrowArgumentNullException()
+    {
+        var vector1 = new MathVector([1, 2, 3]);
+        IMathVector vector2 = null;
+
+        Action act = () => vector1.Multiply(vector2);
+
+        Assert.Throws<ArgumentNullException>(act);
+    }
 
     [Fact]
     public void ScalarMultiply_ShouldReturnCorrectResult()
     {
-        var vector1 = new MathVector(new double[] { 1, 2, 3 });
-        var vector2 = new MathVector(new double[] { 4, 5, 6 });
+        var vector1 = new MathVector([1, 2, 3]);
+        var vector2 = new MathVector([4, 5, 6]);
 
         var result = vector1.ScalarMultiply(vector2);
 
@@ -130,8 +192,8 @@ public class MathVectorTests
     [Fact]
     public void ScalarMultiply_DifferentDimensions_ShouldThrowArgumentException()
     {
-        var vector1 = new MathVector(new double[] { 1, 2 });
-        var vector2 = new MathVector(new double[] { 3, 4, 5 });
+        var vector1 = new MathVector([1, 2]);
+        var vector2 = new MathVector([3, 4, 5]);
 
         Action act = () => vector1.ScalarMultiply(vector2);
 
@@ -139,31 +201,232 @@ public class MathVectorTests
     }
 
     [Fact]
-    public void OperatorAddition_ShouldAddVectorsCorrectly()
+    public void ScalarMultiply_NullVector_ShouldThrowArgumentNullException()
     {
-        var vector1 = new MathVector(new double[] { 1, 2 });
-        var vector2 = new MathVector(new double[] { 3, 4 });
+        var vector1 = new MathVector([1, 2]);
+        IMathVector vector2 = null;
+
+        Action act = () => vector1.ScalarMultiply(vector2);
+
+        Assert.Throws<ArgumentNullException>(act);
+    }
+
+    [Fact]
+    public void CalcDistance_VectorsWithSameDimensions_ShouldReturnCorrectResult()
+    {
+        var vector1 = new MathVector([1, 2, 3]);
+        var vector2 = new MathVector([4, 5, 6]);
+
+        var result = vector1.CalcDistance(vector2);
+
+        Assert.Equal(Math.Sqrt(27), result, precision: 5);
+    }
+
+    [Fact]
+    public void CalcDistance_VectorsWithDifferentDimensions_ShouldThrowArgumentException()
+    {
+        var vector1 = new MathVector([1, 2, 3]);
+        var vector2 = new MathVector([4, 5]);
+        
+        Action act = () => vector1.CalcDistance(vector2);
+        
+        Assert.Throws<ArgumentException>(act);
+    }
+
+    [Fact]
+    public void CalcDistance_NullVector_ShouldThrowArgumentNullException()
+    {
+        var vector1 = new MathVector([1, 2, 3]);
+        IMathVector vector2 = null;
+        
+        Action act = () => vector1.CalcDistance(vector2);
+        
+        Assert.Throws<ArgumentNullException>(act);
+    }
+
+    [Fact]
+    public void GetEnumerator_ShouldReturnCorrectResult()
+    {
+        var vector = new MathVector([1, 2, 3]);
+        
+        var result = vector.GetEnumerator();
+        
+        result.MoveNext();
+        Assert.Equal((double)1, result.Current);
+        result.MoveNext();
+        Assert.Equal((double)2, result.Current);
+        result.MoveNext();
+        Assert.Equal((double)3, result.Current);
+    }
+    
+    [Fact]
+    public void OperatorAddition_VectorsWithSameDimensions_ShouldReturnCorrectResult()
+    {
+        var vector1 = new MathVector([1, 2]);
+        var vector2 = new MathVector([3, 4]);
 
         var result = vector1 + vector2;
 
         Assert.Equal(4, result[0]);
+        Assert.Equal(6, result[1]);
     }
 
     [Fact]
-    public void DivideByNumber_ZeroNumber_ShouldThrowDivideByZeroException()
+    public void OperatorAddition_VectorsWithDifferentDimensions_ShouldThrowArgumentException()
     {
-        var vector = new MathVector(new double[] { 1, 2 });
-
-        Action act = () => _ = vector / 0;
-
-        Assert.Throws<DivideByZeroException>(act);
+        var vector1 = new MathVector([1, 2]);
+        var vector2 = new MathVector([3]);
+        
+        Action act = () => _ = vector1 + vector2;
+        
+        Assert.Throws<ArgumentException>(act);
     }
 
     [Fact]
-    public void DivideByVector_ZeroVector_ShouldThrowDivideByZeroException()
+    public void OperatorAddition_NullVector_ShouldThrowArgumentNullException()
     {
-        var vector1 = new MathVector(new double[] { 1, 2 });
-        var vector2 = new MathVector(new double[] { 0, 0 });
+        var vector1 = new MathVector([1, 2, 3]);
+        MathVector vector2 = null;
+        
+        Action act = () => _ = vector1 + vector2;
+        
+        Assert.Throws<ArgumentNullException>(act);
+    }
+
+    [Fact]
+    public void OperatorAdditionWithNumber_ShouldAddNumberToEachComponent()
+    {
+        var vector = new MathVector([1, 2, 3]);
+        
+        var result = vector + 5;
+        
+        Assert.Equal(6, result[0]);
+        Assert.Equal(7, result[1]);
+        Assert.Equal(8, result[2]);
+    }
+
+    [Fact]
+    public void OperatorSubtraction_VectorsWithSameDimensions_ShouldReturnCorrectResult()
+    {
+        var vector1 = new MathVector([1, 2, 3]);
+        var vector2 = new MathVector([4, 6, 10]);
+        
+        var result = vector1 - vector2;
+        
+        Assert.Equal(-3, result[0]);
+        Assert.Equal(-4, result[1]);
+        Assert.Equal(-7, result[2]);
+    }
+
+    [Fact]
+    public void OperatorSubtraction_VectorsWithDifferentDimensions_ShouldThrowArgumentException()
+    {
+        var vector1 = new MathVector([1, 2, 3]);
+        var vector2 = new MathVector([4, 5]);
+        
+        Action act = () => _ = vector1 - vector2;
+        
+        Assert.Throws<ArgumentException>(act);
+    }
+
+    [Fact]
+    public void OperatorSubtraction_NullVector_ShouldThrowArgumentNullException()
+    {
+        var vector1 = new MathVector([1, 2, 3]);
+        MathVector vector2 = null;
+        
+        Action act = () => _ = vector1 - vector2;
+        
+        Assert.Throws<ArgumentNullException>(act);
+    }
+
+    [Fact]
+    public void OperatorMultiplication_VectorsWithSameDimensions_ShouldReturnCorrectResult()
+    {
+        var vector1 = new MathVector([1, 2, 3]);
+        var vector2 = new MathVector([4, 5, 6]);
+        
+        var result = vector1 * vector2;
+        
+        Assert.Equal(4, result[0]);
+        Assert.Equal(10, result[1]);
+        Assert.Equal(18, result[2]);
+    }
+
+    [Fact]
+    public void OperatorMultiplication_VectorsWithDifferentDimensions_ShouldThrowArgumentException()
+    {
+        var vector1 = new MathVector([1, 2, 3]);
+        var vector2 = new MathVector([4, 5]);
+        
+        Action act = () => _ = vector1 * vector2;
+        
+        Assert.Throws<ArgumentException>(act);
+    }
+
+    [Fact]
+    public void OperatorMultiplication_NullVector_ShouldThrowArgumentNullException()
+    {
+        var vector1 = new MathVector([1, 2, 3]);
+        MathVector vector2 = null;
+        
+        Action act = () => _ = vector1 * vector2;
+        
+        Assert.Throws<ArgumentNullException>(act);
+    }
+
+    [Fact]
+    public void OperatorMultiplicationByNumber_ShouldMultiplyEachComponent()
+    {
+        var vector = new MathVector([1, 2, 3]);
+        
+        var result = vector * 5;
+        
+        Assert.Equal(5, result[0]);
+        Assert.Equal(10, result[1]);
+        Assert.Equal(15, result[2]);
+    }
+
+    [Fact]
+    public void OperatorDivision_VectorsWithSameDimensions_ShouldReturnCorrectResult()
+    {
+        var vector1 = new MathVector([4, 6, 10]);
+        var vector2 = new MathVector([2, 3, 5]);
+        
+        var result = vector1 / vector2;
+        
+        Assert.Equal(2, result[0]);
+        Assert.Equal(2, result[1]);
+        Assert.Equal(2, result[2]);
+    }
+
+    [Fact]
+    public void OperatorDivision_VectorsWithDifferentDimensions_ShouldThrowArgumentException()
+    {
+        var vector1 = new MathVector([1, 2, 3]);
+        var vector2 = new MathVector([4, 5]);
+        
+        Action act = () => _ = vector1 / vector2;
+        
+        Assert.Throws<ArgumentException>(act);
+    }
+
+    [Fact]
+    public void OperatorDivision_NullVector_ShouldThrowArgumentNullException()
+    {
+        var vector1 = new MathVector([1, 2, 3]);
+        MathVector vector2 = null;
+        
+        Action act = () => _ = vector1 / vector2;
+        
+        Assert.Throws<ArgumentNullException>(act);
+    }
+
+    [Fact]
+    public void OperatorDivision_ZeroComponent_ShouldThrowDivideByZeroException()
+    {
+        var vector1 = new MathVector([1, 2, 3]);
+        var vector2 = new MathVector([0, 0, 0]);
         
         Action act = () => _ = vector1 / vector2;
         
@@ -171,13 +434,57 @@ public class MathVectorTests
     }
 
     [Fact]
-    public void CalcDistance_ShouldReturnCorrectResult()
+    public void OperatorDivisionByNumber_NotZeroNumber_ShouldDivideEachComponent()
     {
-        var vector1 = new MathVector(new double[] { 1, 2, 3 });
-        var vector2 = new MathVector(new double[] { 4, 5, 6 });
+        var vector = new MathVector([2, 4, 6]);
+        
+        var result = vector / 2;
+        
+        Assert.Equal(1, result[0]);
+        Assert.Equal(2, result[1]);
+        Assert.Equal(3, result[2]);
+    }
 
-        var result = vector1.CalcDistance(vector2);
+    [Fact]
+    public void OperatorDivisionByNumber_ZeroNumber_ShouldThrowDivideByZeroException()
+    {
+        var vector = new MathVector([1, 2]);
 
-        Assert.Equal(Math.Sqrt(27), result, precision: 5);
+        Action act = () => _ = vector / 0;
+
+        Assert.Throws<DivideByZeroException>(act);
+    }
+
+    [Fact]
+    public void OperatorModulus_VectorsWithSameDimensions_ShouldReturnCorrectResult()
+    {
+        var vector1 = new MathVector([1, 2, 3]);
+        var vector2 = new MathVector([4, 5, 6]);
+        
+        var result = vector1 % vector2;
+        
+        Assert.Equal(32, result); // 1*4 + 2*5 + 3*6
+    }
+
+    [Fact]
+    public void OperatorModulus_VectorsWithDifferentDimensions_ShouldThrowArgumentException()
+    {
+        var vector1 = new MathVector([1, 2, 3]);
+        var vector2 = new MathVector([4, 5]);
+        
+        Action act = () => _ = vector1 % vector2;
+        
+        Assert.Throws<ArgumentException>(act);
+    }
+
+    [Fact]
+    public void OperatorModulus_NullVector_ShouldThrowArgumentNullException()
+    {
+        var vector1 = new MathVector([1, 2, 3]);
+        MathVector vector2 = null;
+        
+        Action act = () => _ = vector1 % vector2;
+        
+        Assert.Throws<ArgumentNullException>(act);
     }
 }
