@@ -33,14 +33,32 @@ public class Config
 
     public static Config Load(string configFilePath)
     {
-        var json = File.ReadAllText(configFilePath);
-        var config = JsonSerializer.Deserialize<Config>(json);
+        try
+        {
+            var json = File.ReadAllText(configFilePath);
+            var config = DeserializeStrict<Config>(json);
+
+            return config;
+        }
+        catch (Exception e)
+        {
+            throw new FileLoadException("The config file could not be loaded.", e);
+        }
+    }
+
+    private static T DeserializeStrict<T>(string json)
+    {
+        if (string.IsNullOrEmpty(json))
+        {
+            throw new ArgumentException("JSON cannot be null or empty.");
+        }
         
-        if (config == null)
+        var result = JsonSerializer.Deserialize<T>(json);
+        if (result == null)
         {
             throw new FileLoadException("The config file could not be loaded.");
         }
 
-        return config;
+        return result;
     }
 }

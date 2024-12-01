@@ -40,10 +40,27 @@ public class Engine : IEngine
         }
     }
 
+    public void AddPerson(Person person)
+    {
+        SubscribeToChildBirth(person);
+        SubscribePersonToYearTick(person);
+        _population.Add(person);
+    }
+
+    public void RemovePerson(Person person)
+    {
+        UnsubscribePersonFromYearTick(person);   
+        UnsubscribeFromChildBirth(person);
+    }
+
     private void SubscribePersonToYearTick(Person person) => YearTick += person.OnYearTick;
+    
+    private void UnsubscribePersonFromYearTick(Person person) => YearTick -= person.OnYearTick;
 
     private void SubscribeToChildBirth(Person person) => person.ChildBirth += OnChildBirth;
-
+    
+    private void UnsubscribeFromChildBirth(Person person) => person.ChildBirth -= OnChildBirth;
+    
     private void OnYearTick() => YearTick?.Invoke(this, EventArgs.Empty);
 
     private void OnChildBirth(object sender, EventArgs e)
@@ -52,13 +69,6 @@ public class Engine : IEngine
         var child = new Person(CurrentYear, gender, _config, _deathRules);
 
         AddPerson(child);
-    }
-
-    private void AddPerson(Person person)
-    {
-        SubscribeToChildBirth(person);
-        SubscribePersonToYearTick(person);
-        _population.Add(person);
     }
 
     private void WritePopulationData()

@@ -25,13 +25,14 @@ public class Person
     {
         if (!IsAlive) return;
 
-        var engine = (Engine)sender;
+        var engine = (IEngine)sender;
         var currentYear = engine.CurrentYear;
         var age = currentYear - BirthYear;
 
         if (ShouldDie(age))
         {
             DeathYear = currentYear;
+            engine.RemovePerson(this);
             return;
         }
 
