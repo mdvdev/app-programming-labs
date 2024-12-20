@@ -1,0 +1,10 @@
+{
+    "EmitterFrequency": 1000,
+    "HandlerProcessingTime": 2000,
+    "TaskCount": 50,
+    "AnalystCount": 3,
+    "DeveloperCount": 3,
+    "TesterCount": 1,
+    "ManagerCount": 1
+}
+
