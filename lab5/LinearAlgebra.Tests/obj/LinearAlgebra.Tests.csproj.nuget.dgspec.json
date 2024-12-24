@@ -1,0 +1,142 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/ana/projects/edu/app-prog-labs/lab5/LinearAlgebra.Tests/LinearAlgebra.Tests.csproj": {}
+  },
+  "projects": {
+    "/Users/ana/projects/edu/app-prog-labs/lab5/LinearAlgebra.Tests/LinearAlgebra.Tests.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/ana/projects/edu/app-prog-labs/lab5/LinearAlgebra.Tests/LinearAlgebra.Tests.csproj",
+        "projectName": "LinearAlgebra.Tests",
+        "projectPath": "/Users/ana/projects/edu/app-prog-labs/lab5/LinearAlgebra.Tests/LinearAlgebra.Tests.csproj",
+        "packagesPath": "/Users/ana/.nuget/packages/",
+        "outputPath": "/Users/ana/projects/edu/app-prog-labs/lab5/LinearAlgebra.Tests/obj/",
+        "projectStyle": "PackageReference",
+        "UsingMicrosoftNETSdk": false,
+        "configFilePaths": [
+          "/Users/ana/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/Users/ana/projects/edu/app-prog-labs/lab5/LinearAlgebra/LinearAlgebra.csproj": {
+                "projectPath": "/Users/ana/projects/edu/app-prog-labs/lab5/LinearAlgebra/LinearAlgebra.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[17.6.0, )"
+            },
+            "coverlet.collector": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "xunit": {
+              "target": "Package",
+              "version": "[2.4.2, )"
+            },
+            "xunit.runner.visualstudio": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.4.5, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/Cellar/dotnet/8.0.8_1/libexec/sdk/8.0.108/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/ana/projects/edu/app-prog-labs/lab5/LinearAlgebra/LinearAlgebra.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/ana/projects/edu/app-prog-labs/lab5/LinearAlgebra/LinearAlgebra.csproj",
+        "projectName": "LinearAlgebra",
+        "projectPath": "/Users/ana/projects/edu/app-prog-labs/lab5/LinearAlgebra/LinearAlgebra.csproj",
+        "packagesPath": "/Users/ana/.nuget/packages/",
+        "outputPath": "/Users/ana/projects/edu/app-prog-labs/lab5/LinearAlgebra/obj/",
+        "projectStyle": "PackageReference",
+        "UsingMicrosoftNETSdk": false,
+        "configFilePaths": [
+          "/Users/ana/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/Cellar/dotnet/8.0.8_1/libexec/sdk/8.0.108/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

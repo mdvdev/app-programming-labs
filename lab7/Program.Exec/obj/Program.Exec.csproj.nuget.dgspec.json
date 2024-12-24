@@ -1,0 +1,210 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/ana/projects/edu/app-prog-labs/lab7/Program.Exec/Program.Exec.csproj": {}
+  },
+  "projects": {
+    "/Users/ana/projects/edu/app-prog-labs/lab7/DevelopmentPipeline/DevelopmentPipeline.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/ana/projects/edu/app-prog-labs/lab7/DevelopmentPipeline/DevelopmentPipeline.csproj",
+        "projectName": "DevelopmentPipeline",
+        "projectPath": "/Users/ana/projects/edu/app-prog-labs/lab7/DevelopmentPipeline/DevelopmentPipeline.csproj",
+        "packagesPath": "/Users/ana/.nuget/packages/",
+        "outputPath": "/Users/ana/projects/edu/app-prog-labs/lab7/DevelopmentPipeline/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/ana/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "/usr/local/Cellar/dotnet/9.0.101/libexec/library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "/Users/ana/projects/edu/app-prog-labs/lab7/EventLogger/EventLogger.csproj": {
+                "projectPath": "/Users/ana/projects/edu/app-prog-labs/lab7/EventLogger/EventLogger.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.100"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/Cellar/dotnet/9.0.101/libexec/sdk/9.0.101/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/ana/projects/edu/app-prog-labs/lab7/EventLogger/EventLogger.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/ana/projects/edu/app-prog-labs/lab7/EventLogger/EventLogger.csproj",
+        "projectName": "EventLogger",
+        "projectPath": "/Users/ana/projects/edu/app-prog-labs/lab7/EventLogger/EventLogger.csproj",
+        "packagesPath": "/Users/ana/.nuget/packages/",
+        "outputPath": "/Users/ana/projects/edu/app-prog-labs/lab7/EventLogger/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/ana/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "/usr/local/Cellar/dotnet/9.0.101/libexec/library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.100"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/Cellar/dotnet/9.0.101/libexec/sdk/9.0.101/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/ana/projects/edu/app-prog-labs/lab7/Program.Exec/Program.Exec.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/ana/projects/edu/app-prog-labs/lab7/Program.Exec/Program.Exec.csproj",
+        "projectName": "Program.Exec",
+        "projectPath": "/Users/ana/projects/edu/app-prog-labs/lab7/Program.Exec/Program.Exec.csproj",
+        "packagesPath": "/Users/ana/.nuget/packages/",
+        "outputPath": "/Users/ana/projects/edu/app-prog-labs/lab7/Program.Exec/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/ana/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "/usr/local/Cellar/dotnet/9.0.101/libexec/library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "/Users/ana/projects/edu/app-prog-labs/lab7/DevelopmentPipeline/DevelopmentPipeline.csproj": {
+                "projectPath": "/Users/ana/projects/edu/app-prog-labs/lab7/DevelopmentPipeline/DevelopmentPipeline.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.100"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "dependencies": {
+            "Microsoft.Extensions.Configuration": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "Microsoft.Extensions.Configuration.Binder": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "Microsoft.Extensions.Configuration.Json": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/Cellar/dotnet/9.0.101/libexec/sdk/9.0.101/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

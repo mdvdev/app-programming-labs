@@ -1,0 +1,165 @@
+Index: Program.Exec/Program.Exec.csproj
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><Project Sdk=\"Microsoft.NET.Sdk\">\n\n    <PropertyGroup>\n        <OutputType>Exe</OutputType>\n        <TargetFramework>net9.0</TargetFramework>\n        <ImplicitUsings>enable</ImplicitUsings>\n        <Nullable>enable</Nullable>\n        <RootNamespace>lab7</RootNamespace>\n    </PropertyGroup>\n\n    <ItemGroup>\n      <PackageReference Include=\"Microsoft.Extensions.Configuration\" Version=\"9.0.0\" />\n      <PackageReference Include=\"Microsoft.Extensions.Configuration.Binder\" Version=\"9.0.0\" />\n      <PackageReference Include=\"Microsoft.Extensions.Configuration.Json\" Version=\"9.0.0\" />\n    </ItemGroup>\n\n    <ItemGroup>\n      <None Include=\"bin\\Debug\\net9.0\\config.json\" />\n    </ItemGroup>\n\n    <ItemGroup>\n      <Folder Include=\"bin\\Debug\\net9.0\\\" />\n    </ItemGroup>\n\n    <ItemGroup>\n      <ProjectReference Include=\"..\\DevelopmentPipeline\\DevelopmentPipeline.csproj\" />\n    </ItemGroup>\n\n</Project>\n
+===================================================================
+diff --git a/Program.Exec/Program.Exec.csproj b/Program.Exec/Program.Exec.csproj
+--- a/Program.Exec/Program.Exec.csproj	(revision a0c12e8269dc036b3bef401acf57e6a5781621eb)
++++ b/Program.Exec/Program.Exec.csproj	(date 1735070316181)
+@@ -19,11 +19,27 @@
+     </ItemGroup>
+ 
+     <ItemGroup>
+-      <Folder Include="bin\Debug\net9.0\" />
++      <ProjectReference Include="..\DevelopmentPipeline\DevelopmentPipeline.csproj" />
+     </ItemGroup>
+ 
+     <ItemGroup>
+-      <ProjectReference Include="..\DevelopmentPipeline\DevelopmentPipeline.csproj" />
++      <Content Include="bin\Debug\net9.0\lab7.deps.json" />
++      <Content Include="bin\Debug\net9.0\lab7.runtimeconfig.json" />
++      <Content Include="obj\Debug\net9.0\lab7.csproj.FileListAbsolute.txt" />
++      <Content Include="obj\Debug\net9.0\lab7.GeneratedMSBuildEditorConfig.editorconfig" />
++      <Content Include="obj\Debug\net9.0\lab7.sourcelink.json" />
++      <Content Include="obj\lab7.csproj.nuget.dgspec.json" />
++      <Content Include="obj\lab7.csproj.nuget.g.props" />
++      <Content Include="obj\lab7.csproj.nuget.g.targets" />
++      <Content Include="obj\project.assets.json" />
++      <Content Include="obj\project.packagespec.json" />
++      <Content Include="obj\rider.project.restore.info" />
++    </ItemGroup>
++
++    <ItemGroup>
++      <Compile Include="obj\Debug\net9.0\.NETCoreApp,Version=v9.0.AssemblyAttributes.cs" />
++      <Compile Include="obj\Debug\net9.0\lab7.AssemblyInfo.cs" />
++      <Compile Include="obj\Debug\net9.0\lab7.GlobalUsings.g.cs" />
+     </ItemGroup>
+ 
+ </Project>
+Index: Program.Exec/config.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>{\n    \"EmitterFrequency\": 1000,\n    \"HandlerProcessingTime\": 2000,\n    \"TaskCount\": 50,\n    \"AnalystCount\": 3,\n    \"DeveloperCount\": 3,\n    \"TesterCount\": 1,\n    \"ManagerCount\": 1\n}\n\n
+===================================================================
+diff --git a/Program.Exec/config.json b/Program.Exec/config.json
+--- a/Program.Exec/config.json	(revision a0c12e8269dc036b3bef401acf57e6a5781621eb)
++++ b/Program.Exec/config.json	(date 1735070324394)
+@@ -1,10 +1,10 @@
+ {
+     "EmitterFrequency": 1000,
+-    "HandlerProcessingTime": 2000,
++    "HandlerProcessingTime": 500,
+     "TaskCount": 50,
+     "AnalystCount": 3,
+     "DeveloperCount": 3,
+-    "TesterCount": 1,
++    "TesterCount": 2,
+     "ManagerCount": 1
+ }
+ 
+Index: ../lab9/DatabaseContext/DatabaseContext.csproj
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><Project Sdk=\"Microsoft.NET.Sdk\">\n\n    <PropertyGroup>\n        <TargetFramework>net9.0</TargetFramework>\n        <ImplicitUsings>enable</ImplicitUsings>\n        <Nullable>enable</Nullable>\n    </PropertyGroup>\n\n    <ItemGroup>\n      <PackageReference Include=\"Microsoft.EntityFrameworkCore.Design\" Version=\"9.0.0\">\n        <PrivateAssets>all</PrivateAssets>\n        <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>\n      </PackageReference>\n      <PackageReference Include=\"Microsoft.EntityFrameworkCore.Tools\" Version=\"9.0.0\">\n        <PrivateAssets>all</PrivateAssets>\n        <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>\n      </PackageReference>\n      <PackageReference Include=\"Npgsql.EntityFrameworkCore.PostgreSQL\" Version=\"9.0.2\" />\n    </ItemGroup>\n\n    <ItemGroup>\n      <ProjectReference Include=\"..\\DatabaseModels\\DatabaseModels.csproj\" />\n    </ItemGroup>\n\n</Project>\n
+===================================================================
+diff --git a/../lab9/DatabaseContext/DatabaseContext.csproj b/../lab9/DatabaseContext/DatabaseContext.csproj
+--- a/../lab9/DatabaseContext/DatabaseContext.csproj	(revision a0c12e8269dc036b3bef401acf57e6a5781621eb)
++++ b/../lab9/DatabaseContext/DatabaseContext.csproj	(date 1735070313054)
+@@ -22,4 +22,15 @@
+       <ProjectReference Include="..\DatabaseModels\DatabaseModels.csproj" />
+     </ItemGroup>
+ 
++    <ItemGroup>
++      <Content Include="obj\DatabaseContext.csproj.nuget.dgspec.json" />
++      <Content Include="obj\project.assets.json" />
++      <Content Include="obj\project.packagespec.json" />
++      <Content Include="obj\rider.project.restore.info" />
++    </ItemGroup>
++
++    <ItemGroup>
++      <Compile Include="obj\Debug\net9.0\.NETCoreApp,Version=v9.0.AssemblyAttributes.cs" />
++    </ItemGroup>
++
+ </Project>
+Index: DevelopmentPipeline/DevelopmentPipeline.csproj
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><Project Sdk=\"Microsoft.NET.Sdk\">\n\n    <PropertyGroup>\n        <TargetFramework>net9.0</TargetFramework>\n        <ImplicitUsings>enable</ImplicitUsings>\n        <Nullable>enable</Nullable>\n    </PropertyGroup>\n\n    <ItemGroup>\n      <ProjectReference Include=\"..\\EventLogger\\EventLogger.csproj\" />\n    </ItemGroup>\n\n</Project>\n
+===================================================================
+diff --git a/DevelopmentPipeline/DevelopmentPipeline.csproj b/DevelopmentPipeline/DevelopmentPipeline.csproj
+--- a/DevelopmentPipeline/DevelopmentPipeline.csproj	(revision a0c12e8269dc036b3bef401acf57e6a5781621eb)
++++ b/DevelopmentPipeline/DevelopmentPipeline.csproj	(date 1735070314970)
+@@ -10,4 +10,15 @@
+       <ProjectReference Include="..\EventLogger\EventLogger.csproj" />
+     </ItemGroup>
+ 
++    <ItemGroup>
++      <Content Include="obj\DevelopmentPipeline.csproj.nuget.dgspec.json" />
++      <Content Include="obj\project.assets.json" />
++      <Content Include="obj\project.packagespec.json" />
++      <Content Include="obj\rider.project.restore.info" />
++    </ItemGroup>
++
++    <ItemGroup>
++      <Compile Include="obj\Debug\net9.0\.NETCoreApp,Version=v9.0.AssemblyAttributes.cs" />
++    </ItemGroup>
++
+ </Project>
+Index: DevelopmentPipeline/obj/Debug/net9.0/DevelopmentPipeline.AssemblyInfo.cs
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>//------------------------------------------------------------------------------\n// <auto-generated>\n//     This code was generated by a tool.\n//\n//     Changes to this file may cause incorrect behavior and will be lost if\n//     the code is regenerated.\n// </auto-generated>\n//------------------------------------------------------------------------------\n\nusing System;\nusing System.Reflection;\n\n[assembly: System.Reflection.AssemblyCompanyAttribute(\"DevelopmentPipeline\")]\n[assembly: System.Reflection.AssemblyConfigurationAttribute(\"Debug\")]\n[assembly: System.Reflection.AssemblyFileVersionAttribute(\"1.0.0.0\")]\n[assembly: System.Reflection.AssemblyInformationalVersionAttribute(\"1.0.0+881283aa84faf7c8c23b8cf17a187096d05af6e9\")]\n[assembly: System.Reflection.AssemblyProductAttribute(\"DevelopmentPipeline\")]\n[assembly: System.Reflection.AssemblyTitleAttribute(\"DevelopmentPipeline\")]\n[assembly: System.Reflection.AssemblyVersionAttribute(\"1.0.0.0\")]\n\n// Generated by the MSBuild WriteCodeFragment class.\n\n
+===================================================================
+diff --git a/DevelopmentPipeline/obj/Debug/net9.0/DevelopmentPipeline.AssemblyInfo.cs b/DevelopmentPipeline/obj/Debug/net9.0/DevelopmentPipeline.AssemblyInfo.cs
+--- a/DevelopmentPipeline/obj/Debug/net9.0/DevelopmentPipeline.AssemblyInfo.cs	(revision a0c12e8269dc036b3bef401acf57e6a5781621eb)
++++ b/DevelopmentPipeline/obj/Debug/net9.0/DevelopmentPipeline.AssemblyInfo.cs	(date 1735070330868)
+@@ -13,7 +13,7 @@
+ [assembly: System.Reflection.AssemblyCompanyAttribute("DevelopmentPipeline")]
+ [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
+ [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
+-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+881283aa84faf7c8c23b8cf17a187096d05af6e9")]
++[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a0c12e8269dc036b3bef401acf57e6a5781621eb")]
+ [assembly: System.Reflection.AssemblyProductAttribute("DevelopmentPipeline")]
+ [assembly: System.Reflection.AssemblyTitleAttribute("DevelopmentPipeline")]
+ [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
+Index: ../lab9/Core/obj/Debug/net9.0/Core.AssemblyInfo.cs
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>//------------------------------------------------------------------------------\n// <auto-generated>\n//     This code was generated by a tool.\n//\n//     Changes to this file may cause incorrect behavior and will be lost if\n//     the code is regenerated.\n// </auto-generated>\n//------------------------------------------------------------------------------\n\nusing System;\nusing System.Reflection;\n\n[assembly: System.Reflection.AssemblyCompanyAttribute(\"Core\")]\n[assembly: System.Reflection.AssemblyConfigurationAttribute(\"Debug\")]\n[assembly: System.Reflection.AssemblyFileVersionAttribute(\"1.0.0.0\")]\n[assembly: System.Reflection.AssemblyInformationalVersionAttribute(\"1.0.0+bd010521d5b748cb889e3fe6955f52df0ba408e4\")]\n[assembly: System.Reflection.AssemblyProductAttribute(\"Core\")]\n[assembly: System.Reflection.AssemblyTitleAttribute(\"Core\")]\n[assembly: System.Reflection.AssemblyVersionAttribute(\"1.0.0.0\")]\n\n// Generated by the MSBuild WriteCodeFragment class.\n\n
+===================================================================
+diff --git a/../lab9/Core/obj/Debug/net9.0/Core.AssemblyInfo.cs b/../lab9/Core/obj/Debug/net9.0/Core.AssemblyInfo.cs
+--- a/../lab9/Core/obj/Debug/net9.0/Core.AssemblyInfo.cs	(revision a0c12e8269dc036b3bef401acf57e6a5781621eb)
++++ b/../lab9/Core/obj/Debug/net9.0/Core.AssemblyInfo.cs	(date 1735070332812)
+@@ -13,7 +13,7 @@
+ [assembly: System.Reflection.AssemblyCompanyAttribute("Core")]
+ [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
+ [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
+-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bd010521d5b748cb889e3fe6955f52df0ba408e4")]
++[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a0c12e8269dc036b3bef401acf57e6a5781621eb")]
+ [assembly: System.Reflection.AssemblyProductAttribute("Core")]
+ [assembly: System.Reflection.AssemblyTitleAttribute("Core")]
+ [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
+Index: ../lab9/DatabaseModels/DatabaseModels.csproj
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><Project Sdk=\"Microsoft.NET.Sdk\">\n\n    <PropertyGroup>\n        <TargetFramework>net9.0</TargetFramework>\n        <ImplicitUsings>enable</ImplicitUsings>\n        <Nullable>enable</Nullable>\n    </PropertyGroup>\n\n    <ItemGroup>\n      <PackageReference Include=\"Microsoft.EntityFrameworkCore.Design\" Version=\"9.0.0\">\n        <PrivateAssets>all</PrivateAssets>\n        <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>\n      </PackageReference>\n      <PackageReference Include=\"Microsoft.EntityFrameworkCore.Tools\" Version=\"9.0.0\">\n        <PrivateAssets>all</PrivateAssets>\n        <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>\n      </PackageReference>\n      <PackageReference Include=\"Npgsql.EntityFrameworkCore.PostgreSQL\" Version=\"9.0.2\" />\n    </ItemGroup>\n\n</Project>\n
+===================================================================
+diff --git a/../lab9/DatabaseModels/DatabaseModels.csproj b/../lab9/DatabaseModels/DatabaseModels.csproj
+--- a/../lab9/DatabaseModels/DatabaseModels.csproj	(revision a0c12e8269dc036b3bef401acf57e6a5781621eb)
++++ b/../lab9/DatabaseModels/DatabaseModels.csproj	(date 1735070312006)
+@@ -18,4 +18,15 @@
+       <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="9.0.2" />
+     </ItemGroup>
+ 
++    <ItemGroup>
++      <Content Include="obj\DatabaseModels.csproj.nuget.dgspec.json" />
++      <Content Include="obj\project.assets.json" />
++      <Content Include="obj\project.packagespec.json" />
++      <Content Include="obj\rider.project.restore.info" />
++    </ItemGroup>
++
++    <ItemGroup>
++      <Compile Include="obj\Debug\net9.0\.NETCoreApp,Version=v9.0.AssemblyAttributes.cs" />
++    </ItemGroup>
++
+ </Project>

@@ -1,0 +1,456 @@
+﻿17:47:20 - Emitter generated Task-1
+17:47:20 - Analyst-1 started processing Task-1
+17:47:21 - Analyst-1 finished processing Task-1
+17:47:21 - Developer-2 started processing Task-1
+17:47:21 - Developer-2 finished processing Task-1
+17:47:21 - Tester-1 started processing Task-1
+17:47:21 - Emitter generated Task-2
+17:47:21 - Analyst-2 started processing Task-2
+17:47:22 - Tester-1 finished processing Task-1
+17:47:22 - Manager-1 started processing Task-1
+17:47:22 - Analyst-2 finished processing Task-2
+17:47:22 - Developer-1 started processing Task-2
+17:47:22 - Manager-1 finished processing Task-1
+17:47:22 - Emitter generated Task-3
+17:47:22 - Analyst-1 started processing Task-3
+17:47:23 - Developer-1 finished processing Task-2
+17:47:23 - Tester-2 started processing Task-2
+17:47:23 - Analyst-1 finished processing Task-3
+17:47:23 - Developer-2 started processing Task-3
+17:47:23 - Tester-2 finished processing Task-2
+17:47:23 - Manager-1 started processing Task-2
+17:47:23 - Developer-2 finished processing Task-3
+17:47:23 - Tester-1 started processing Task-3
+17:47:24 - Emitter generated Task-4
+17:47:24 - Analyst-3 started processing Task-4
+17:47:24 - Manager-1 finished processing Task-2
+17:47:24 - Tester-1 finished processing Task-3
+17:47:24 - Manager-1 started processing Task-3
+17:47:24 - Analyst-3 finished processing Task-4
+17:47:24 - Developer-1 started processing Task-4
+17:47:24 - Manager-1 finished processing Task-3
+17:47:24 - Developer-1 finished processing Task-4
+17:47:24 - Tester-2 started processing Task-4
+17:47:25 - Emitter generated Task-5
+17:47:25 - Analyst-1 started processing Task-5
+17:47:25 - Tester-2 finished processing Task-4
+17:47:25 - Manager-1 started processing Task-4
+17:47:25 - Analyst-1 finished processing Task-5
+17:47:25 - Developer-2 started processing Task-5
+17:47:25 - Emitter generated Task-6
+17:47:25 - Analyst-2 started processing Task-6
+17:47:26 - Manager-1 finished processing Task-4
+17:47:26 - Developer-2 finished processing Task-5
+17:47:26 - Tester-2 started processing Task-5
+17:47:26 - Analyst-2 finished processing Task-6
+17:47:26 - Developer-3 started processing Task-6
+17:47:26 - Tester-2 finished processing Task-5
+17:47:26 - Manager-1 started processing Task-5
+17:47:26 - Emitter generated Task-7
+17:47:26 - Analyst-3 started processing Task-7
+17:47:27 - Developer-3 finished processing Task-6
+17:47:27 - Tester-2 started processing Task-6
+17:47:27 - Manager-1 finished processing Task-5
+17:47:27 - Analyst-3 finished processing Task-7
+17:47:27 - Developer-2 started processing Task-7
+17:47:27 - Tester-2 finished processing Task-6
+17:47:27 - Manager-1 started processing Task-6
+17:47:28 - Developer-2 finished processing Task-7
+17:47:28 - Tester-1 started processing Task-7
+17:47:28 - Emitter generated Task-8
+17:47:28 - Analyst-1 started processing Task-8
+17:47:28 - Manager-1 finished processing Task-6
+17:47:28 - Tester-1 finished processing Task-7
+17:47:28 - Manager-1 started processing Task-7
+17:47:28 - Analyst-1 finished processing Task-8
+17:47:28 - Developer-1 started processing Task-8
+17:47:28 - Emitter generated Task-9
+17:47:28 - Analyst-2 started processing Task-9
+17:47:29 - Manager-1 finished processing Task-7
+17:47:29 - Developer-1 finished processing Task-8
+17:47:29 - Tester-2 started processing Task-8
+17:47:29 - Analyst-2 finished processing Task-9
+17:47:29 - Developer-2 started processing Task-9
+17:47:29 - Tester-2 finished processing Task-8
+17:47:29 - Manager-1 started processing Task-8
+17:47:29 - Developer-2 finished processing Task-9
+17:47:29 - Tester-1 started processing Task-9
+17:47:30 - Emitter generated Task-10
+17:47:30 - Analyst-3 started processing Task-10
+17:47:30 - Manager-1 finished processing Task-8
+17:47:30 - Tester-1 finished processing Task-9
+17:47:30 - Manager-1 started processing Task-9
+17:47:30 - Analyst-3 finished processing Task-10
+17:47:30 - Developer-1 started processing Task-10
+17:47:30 - Manager-1 finished processing Task-9
+17:47:30 - Developer-1 finished processing Task-10
+17:47:30 - Tester-1 started processing Task-10
+17:47:31 - Emitter generated Task-11
+17:47:31 - Analyst-1 started processing Task-11
+17:47:31 - Tester-1 finished processing Task-10
+17:47:31 - Manager-1 started processing Task-10
+17:47:31 - Analyst-1 finished processing Task-11
+17:47:31 - Developer-2 started processing Task-11
+17:47:31 - Manager-1 finished processing Task-10
+17:47:32 - Emitter generated Task-12
+17:47:32 - Analyst-3 started processing Task-12
+17:47:32 - Developer-2 finished processing Task-11
+17:47:32 - Tester-1 started processing Task-11
+17:47:32 - Analyst-3 finished processing Task-12
+17:47:32 - Developer-1 started processing Task-12
+17:47:32 - Tester-1 finished processing Task-11
+17:47:32 - Manager-1 started processing Task-11
+17:47:32 - Developer-1 finished processing Task-12
+17:47:32 - Tester-1 started processing Task-12
+17:47:32 - Emitter generated Task-13
+17:47:32 - Analyst-2 started processing Task-13
+17:47:33 - Manager-1 finished processing Task-11
+17:47:33 - Analyst-2 finished processing Task-13
+17:47:33 - Developer-2 started processing Task-13
+17:47:33 - Tester-1 finished processing Task-12
+17:47:33 - Manager-1 started processing Task-12
+17:47:33 - Developer-2 finished processing Task-13
+17:47:33 - Tester-1 started processing Task-13
+17:47:33 - Manager-1 finished processing Task-12
+17:47:33 - Emitter generated Task-14
+17:47:33 - Analyst-1 started processing Task-14
+17:47:34 - Tester-1 finished processing Task-13
+17:47:34 - Manager-1 started processing Task-13
+17:47:34 - Analyst-1 finished processing Task-14
+17:47:34 - Developer-3 started processing Task-14
+17:47:34 - Manager-1 finished processing Task-13
+17:47:34 - Emitter generated Task-15
+17:47:34 - Analyst-3 started processing Task-15
+17:47:34 - Developer-3 finished processing Task-14
+17:47:34 - Tester-1 started processing Task-14
+17:47:35 - Analyst-3 finished processing Task-15
+17:47:35 - Developer-1 started processing Task-15
+17:47:35 - Tester-1 finished processing Task-14
+17:47:35 - Manager-1 started processing Task-14
+17:47:35 - Developer-1 finished processing Task-15
+17:47:35 - Tester-1 started processing Task-15
+17:47:35 - Emitter generated Task-16
+17:47:35 - Analyst-2 started processing Task-16
+17:47:36 - Manager-1 finished processing Task-14
+17:47:36 - Tester-1 finished processing Task-15
+17:47:36 - Manager-1 started processing Task-15
+17:47:36 - Analyst-2 finished processing Task-16
+17:47:36 - Developer-2 started processing Task-16
+17:47:36 - Manager-1 finished processing Task-15
+17:47:36 - Emitter generated Task-17
+17:47:36 - Analyst-1 started processing Task-17
+17:47:37 - Developer-2 finished processing Task-16
+17:47:37 - Tester-1 started processing Task-16
+17:47:37 - Analyst-1 finished processing Task-17
+17:47:37 - Developer-1 started processing Task-17
+17:47:37 - Tester-1 finished processing Task-16
+17:47:37 - Manager-1 started processing Task-16
+17:47:37 - Emitter generated Task-18
+17:47:37 - Analyst-3 started processing Task-18
+17:47:37 - Developer-1 finished processing Task-17
+17:47:37 - Tester-2 started processing Task-17
+17:47:38 - Manager-1 finished processing Task-16
+17:47:38 - Analyst-3 finished processing Task-18
+17:47:38 - Developer-2 started processing Task-18
+17:47:38 - Tester-2 finished processing Task-17
+17:47:38 - Manager-1 started processing Task-17
+17:47:38 - Emitter generated Task-19
+17:47:38 - Analyst-2 started processing Task-19
+17:47:39 - Developer-2 finished processing Task-18
+17:47:39 - Tester-2 started processing Task-18
+17:47:39 - Manager-1 finished processing Task-17
+17:47:39 - Analyst-2 finished processing Task-19
+17:47:39 - Developer-1 started processing Task-19
+17:47:39 - Tester-2 finished processing Task-18
+17:47:39 - Manager-1 started processing Task-18
+17:47:39 - Manager-1 finished processing Task-18
+17:47:39 - Developer-1 finished processing Task-19
+17:47:39 - Tester-2 started processing Task-19
+17:47:39 - Emitter generated Task-20
+17:47:39 - Analyst-1 started processing Task-20
+17:47:40 - Tester-2 finished processing Task-19
+17:47:40 - Manager-1 started processing Task-19
+17:47:40 - Analyst-1 finished processing Task-20
+17:47:40 - Developer-3 started processing Task-20
+17:47:40 - Manager-1 finished processing Task-19
+17:47:40 - Emitter generated Task-21
+17:47:40 - Analyst-3 started processing Task-21
+17:47:40 - Developer-3 finished processing Task-20
+17:47:40 - Tester-2 started processing Task-20
+17:47:41 - Tester-2 finished processing Task-20
+17:47:41 - Manager-1 started processing Task-20
+17:47:41 - Analyst-3 finished processing Task-21
+17:47:41 - Developer-2 started processing Task-21
+17:47:41 - Developer-2 finished processing Task-21
+17:47:41 - Tester-2 started processing Task-21
+17:47:41 - Emitter generated Task-22
+17:47:41 - Analyst-2 started processing Task-22
+17:47:41 - Manager-1 finished processing Task-20
+17:47:42 - Analyst-2 finished processing Task-22
+17:47:42 - Developer-3 started processing Task-22
+17:47:42 - Tester-2 finished processing Task-21
+17:47:42 - Manager-1 started processing Task-21
+17:47:42 - Developer-3 finished processing Task-22
+17:47:42 - Tester-2 started processing Task-22
+17:47:42 - Manager-1 finished processing Task-21
+17:47:42 - Emitter generated Task-23
+17:47:42 - Analyst-1 started processing Task-23
+17:47:43 - Tester-2 finished processing Task-22
+17:47:43 - Manager-1 started processing Task-22
+17:47:43 - Analyst-1 finished processing Task-23
+17:47:43 - Developer-2 started processing Task-23
+17:47:43 - Manager-1 finished processing Task-22
+17:47:43 - Emitter generated Task-24
+17:47:43 - Analyst-3 started processing Task-24
+17:47:43 - Developer-2 finished processing Task-23
+17:47:43 - Tester-2 started processing Task-23
+17:47:44 - Analyst-3 finished processing Task-24
+17:47:44 - Developer-3 started processing Task-24
+17:47:44 - Tester-2 finished processing Task-23
+17:47:44 - Manager-1 started processing Task-23
+17:47:44 - Emitter generated Task-25
+17:47:44 - Analyst-2 started processing Task-25
+17:47:44 - Developer-3 finished processing Task-24
+17:47:44 - Tester-2 started processing Task-24
+17:47:45 - Manager-1 finished processing Task-23
+17:47:45 - Analyst-2 finished processing Task-25
+17:47:45 - Developer-2 started processing Task-25
+17:47:45 - Tester-2 finished processing Task-24
+17:47:45 - Manager-1 started processing Task-24
+17:47:45 - Developer-2 finished processing Task-25
+17:47:45 - Tester-2 started processing Task-25
+17:47:45 - Emitter generated Task-26
+17:47:45 - Analyst-1 started processing Task-26
+17:47:46 - Manager-1 finished processing Task-24
+17:47:46 - Tester-2 finished processing Task-25
+17:47:46 - Manager-1 started processing Task-25
+17:47:46 - Analyst-1 finished processing Task-26
+17:47:46 - Developer-1 started processing Task-26
+17:47:46 - Developer-1 finished processing Task-26
+17:47:46 - Tester-2 started processing Task-26
+17:47:46 - Emitter generated Task-27
+17:47:46 - Analyst-3 started processing Task-27
+17:47:47 - Manager-1 finished processing Task-25
+17:47:47 - Tester-2 finished processing Task-26
+17:47:47 - Manager-1 started processing Task-26
+17:47:47 - Analyst-3 finished processing Task-27
+17:47:47 - Developer-2 started processing Task-27
+17:47:47 - Emitter generated Task-28
+17:47:47 - Analyst-2 started processing Task-28
+17:47:47 - Developer-2 finished processing Task-27
+17:47:47 - Tester-2 started processing Task-27
+17:47:48 - Manager-1 finished processing Task-26
+17:47:48 - Tester-2 finished processing Task-27
+17:47:48 - Manager-1 started processing Task-27
+17:47:48 - Analyst-2 finished processing Task-28
+17:47:48 - Developer-1 started processing Task-28
+17:47:48 - Emitter generated Task-29
+17:47:48 - Analyst-1 started processing Task-29
+17:47:48 - Developer-1 finished processing Task-28
+17:47:48 - Tester-2 started processing Task-28
+17:47:48 - Manager-1 finished processing Task-27
+17:47:49 - Tester-2 finished processing Task-28
+17:47:49 - Manager-1 started processing Task-28
+17:47:49 - Analyst-1 finished processing Task-29
+17:47:49 - Developer-2 started processing Task-29
+17:47:49 - Manager-1 finished processing Task-28
+17:47:49 - Developer-2 finished processing Task-29
+17:47:49 - Tester-2 started processing Task-29
+17:47:49 - Emitter generated Task-30
+17:47:49 - Analyst-3 started processing Task-30
+17:47:50 - Tester-2 finished processing Task-29
+17:47:50 - Manager-1 started processing Task-29
+17:47:50 - Analyst-3 finished processing Task-30
+17:47:50 - Developer-3 started processing Task-30
+17:47:50 - Manager-1 finished processing Task-29
+17:47:50 - Emitter generated Task-31
+17:47:50 - Analyst-2 started processing Task-31
+17:47:51 - Developer-3 finished processing Task-30
+17:47:51 - Tester-1 started processing Task-30
+17:47:51 - Analyst-2 finished processing Task-31
+17:47:51 - Developer-2 started processing Task-31
+17:47:51 - Tester-1 finished processing Task-30
+17:47:51 - Manager-1 started processing Task-30
+17:47:51 - Developer-2 finished processing Task-31
+17:47:51 - Tester-1 started processing Task-31
+17:47:51 - Emitter generated Task-32
+17:47:51 - Analyst-1 started processing Task-32
+17:47:52 - Manager-1 finished processing Task-30
+17:47:52 - Tester-1 finished processing Task-31
+17:47:52 - Manager-1 started processing Task-31
+17:47:52 - Analyst-1 finished processing Task-32
+17:47:52 - Developer-3 started processing Task-32
+17:47:52 - Manager-1 finished processing Task-31
+17:47:52 - Developer-3 finished processing Task-32
+17:47:52 - Tester-1 started processing Task-32
+17:47:52 - Emitter generated Task-33
+17:47:52 - Analyst-3 started processing Task-33
+17:47:53 - Tester-1 finished processing Task-32
+17:47:53 - Manager-1 started processing Task-32
+17:47:53 - Analyst-3 finished processing Task-33
+17:47:53 - Developer-2 started processing Task-33
+17:47:53 - Manager-1 finished processing Task-32
+17:47:53 - Emitter generated Task-34
+17:47:53 - Analyst-1 started processing Task-34
+17:47:53 - Developer-2 finished processing Task-33
+17:47:53 - Tester-1 started processing Task-33
+17:47:54 - Analyst-1 finished processing Task-34
+17:47:54 - Developer-3 started processing Task-34
+17:47:54 - Tester-1 finished processing Task-33
+17:47:54 - Manager-1 started processing Task-33
+17:47:54 - Emitter generated Task-35
+17:47:54 - Analyst-2 started processing Task-35
+17:47:54 - Developer-3 finished processing Task-34
+17:47:54 - Tester-1 started processing Task-34
+17:47:54 - Manager-1 finished processing Task-33
+17:47:55 - Analyst-2 finished processing Task-35
+17:47:55 - Developer-2 started processing Task-35
+17:47:55 - Tester-1 finished processing Task-34
+17:47:55 - Manager-1 started processing Task-34
+17:47:55 - Developer-2 finished processing Task-35
+17:47:55 - Tester-1 started processing Task-35
+17:47:55 - Emitter generated Task-36
+17:47:55 - Analyst-3 started processing Task-36
+17:47:55 - Manager-1 finished processing Task-34
+17:47:56 - Analyst-3 finished processing Task-36
+17:47:56 - Developer-3 started processing Task-36
+17:47:56 - Tester-1 finished processing Task-35
+17:47:56 - Manager-1 started processing Task-35
+17:47:56 - Developer-3 finished processing Task-36
+17:47:56 - Tester-2 started processing Task-36
+17:47:56 - Manager-1 finished processing Task-35
+17:47:56 - Emitter generated Task-37
+17:47:56 - Analyst-2 started processing Task-37
+17:47:57 - Tester-2 finished processing Task-36
+17:47:57 - Manager-1 started processing Task-36
+17:47:57 - Analyst-2 finished processing Task-37
+17:47:57 - Developer-1 started processing Task-37
+17:47:57 - Emitter generated Task-38
+17:47:57 - Analyst-1 started processing Task-38
+17:47:57 - Manager-1 finished processing Task-36
+17:47:57 - Developer-1 finished processing Task-37
+17:47:57 - Tester-2 started processing Task-37
+17:47:58 - Analyst-1 finished processing Task-38
+17:47:58 - Developer-3 started processing Task-38
+17:47:58 - Tester-2 finished processing Task-37
+17:47:58 - Manager-1 started processing Task-37
+17:47:58 - Developer-3 finished processing Task-38
+17:47:58 - Tester-1 started processing Task-38
+17:47:58 - Emitter generated Task-39
+17:47:58 - Analyst-3 started processing Task-39
+17:47:59 - Manager-1 finished processing Task-37
+17:47:59 - Analyst-3 finished processing Task-39
+17:47:59 - Developer-1 started processing Task-39
+17:47:59 - Tester-1 finished processing Task-38
+17:47:59 - Manager-1 started processing Task-38
+17:47:59 - Emitter generated Task-40
+17:47:59 - Analyst-2 started processing Task-40
+17:47:59 - Developer-1 finished processing Task-39
+17:47:59 - Tester-1 started processing Task-39
+17:47:59 - Manager-1 finished processing Task-38
+17:48:00 - Tester-1 finished processing Task-39
+17:48:00 - Manager-1 started processing Task-39
+17:48:00 - Analyst-2 finished processing Task-40
+17:48:00 - Developer-3 started processing Task-40
+17:48:00 - Manager-1 finished processing Task-39
+17:48:00 - Emitter generated Task-41
+17:48:00 - Analyst-1 started processing Task-41
+17:48:00 - Developer-3 finished processing Task-40
+17:48:00 - Tester-1 started processing Task-40
+17:48:01 - Analyst-1 finished processing Task-41
+17:48:01 - Developer-1 started processing Task-41
+17:48:01 - Tester-1 finished processing Task-40
+17:48:01 - Manager-1 started processing Task-40
+17:48:01 - Developer-1 finished processing Task-41
+17:48:01 - Tester-1 started processing Task-41
+17:48:01 - Emitter generated Task-42
+17:48:01 - Analyst-3 started processing Task-42
+17:48:01 - Manager-1 finished processing Task-40
+17:48:02 - Tester-1 finished processing Task-41
+17:48:02 - Manager-1 started processing Task-41
+17:48:02 - Analyst-3 finished processing Task-42
+17:48:02 - Developer-2 started processing Task-42
+17:48:02 - Manager-1 finished processing Task-41
+17:48:02 - Developer-2 finished processing Task-42
+17:48:02 - Tester-1 started processing Task-42
+17:48:02 - Emitter generated Task-43
+17:48:02 - Analyst-2 started processing Task-43
+17:48:03 - Tester-1 finished processing Task-42
+17:48:03 - Manager-1 started processing Task-42
+17:48:03 - Analyst-2 finished processing Task-43
+17:48:03 - Developer-1 started processing Task-43
+17:48:03 - Manager-1 finished processing Task-42
+17:48:03 - Developer-1 finished processing Task-43
+17:48:03 - Tester-1 started processing Task-43
+17:48:03 - Emitter generated Task-44
+17:48:03 - Analyst-1 started processing Task-44
+17:48:04 - Tester-1 finished processing Task-43
+17:48:04 - Manager-1 started processing Task-43
+17:48:04 - Analyst-1 finished processing Task-44
+17:48:04 - Developer-2 started processing Task-44
+17:48:04 - Manager-1 finished processing Task-43
+17:48:04 - Emitter generated Task-45
+17:48:04 - Analyst-2 started processing Task-45
+17:48:04 - Developer-2 finished processing Task-44
+17:48:04 - Tester-1 started processing Task-44
+17:48:05 - Analyst-2 finished processing Task-45
+17:48:05 - Developer-1 started processing Task-45
+17:48:05 - Tester-1 finished processing Task-44
+17:48:05 - Manager-1 started processing Task-44
+17:48:05 - Developer-1 finished processing Task-45
+17:48:05 - Tester-1 started processing Task-45
+17:48:05 - Emitter generated Task-46
+17:48:05 - Analyst-3 started processing Task-46
+17:48:06 - Manager-1 finished processing Task-44
+17:48:06 - Tester-1 finished processing Task-45
+17:48:06 - Manager-1 started processing Task-45
+17:48:06 - Analyst-3 finished processing Task-46
+17:48:06 - Developer-2 started processing Task-46
+17:48:06 - Manager-1 finished processing Task-45
+17:48:06 - Developer-2 finished processing Task-46
+17:48:06 - Tester-1 started processing Task-46
+17:48:06 - Emitter generated Task-47
+17:48:06 - Analyst-1 started processing Task-47
+17:48:07 - Analyst-1 finished processing Task-47
+17:48:07 - Developer-1 started processing Task-47
+17:48:07 - Tester-1 finished processing Task-46
+17:48:07 - Manager-1 started processing Task-46
+17:48:07 - Manager-1 finished processing Task-46
+17:48:07 - Developer-1 finished processing Task-47
+17:48:07 - Tester-1 started processing Task-47
+17:48:07 - Emitter generated Task-48
+17:48:07 - Analyst-2 started processing Task-48
+17:48:08 - Tester-1 finished processing Task-47
+17:48:08 - Manager-1 started processing Task-47
+17:48:08 - Analyst-2 finished processing Task-48
+17:48:08 - Developer-2 started processing Task-48
+17:48:08 - Manager-1 finished processing Task-47
+17:48:08 - Emitter generated Task-49
+17:48:08 - Analyst-3 started processing Task-49
+17:48:08 - Developer-2 finished processing Task-48
+17:48:08 - Tester-2 started processing Task-48
+17:48:09 - Analyst-3 finished processing Task-49
+17:48:09 - Developer-1 started processing Task-49
+17:48:09 - Tester-2 finished processing Task-48
+17:48:09 - Manager-1 started processing Task-48
+17:48:09 - Emitter generated Task-50
+17:48:09 - Analyst-2 started processing Task-50
+17:48:09 - Developer-1 finished processing Task-49
+17:48:09 - Tester-2 started processing Task-49
+17:48:10 - Manager-1 finished processing Task-48
+17:48:10 - Tester-2 finished processing Task-49
+17:48:10 - Manager-1 started processing Task-49
+17:48:10 - Analyst-2 finished processing Task-50
+17:48:10 - Developer-2 started processing Task-50
+17:48:10 - Analyst-2 has finished all tasks.
+17:48:10 - Manager-1 finished processing Task-49
+17:48:10 - Developer-2 finished processing Task-50
+17:48:10 - Developer-2 has finished all tasks.
+17:48:10 - Tester-1 started processing Task-50
+17:48:11 - Tester-1 finished processing Task-50
+17:48:11 - Manager-1 started processing Task-50
+17:48:11 - Tester-1 has finished all tasks.
+17:48:12 - Manager-1 finished processing Task-50
+17:48:12 - Average task idle time: 26599.94 ms
+17:48:12 - Max queue lengths: Manager-1: 0, Developer-3: 1, Developer-1: 1, Developer-2: 1, Analyst-2: 1, Analyst-3: 1, Tester-2: 1, Analyst-1: 1, Tester-1: 1
+17:48:12 - Pipeline completed. Logs written to log.txt

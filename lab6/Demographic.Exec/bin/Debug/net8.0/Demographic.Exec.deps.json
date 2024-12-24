@@ -1,0 +1,50 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "Demographic.Exec/1.0.0": {
+        "dependencies": {
+          "Demographic": "1.0.0",
+          "Demographic.FileOperations": "1.0.0"
+        },
+        "runtime": {
+          "Demographic.Exec.dll": {}
+        }
+      },
+      "Demographic/1.0.0": {
+        "runtime": {
+          "Demographic.dll": {}
+        }
+      },
+      "Demographic.FileOperations/1.0.0": {
+        "dependencies": {
+          "Demographic": "1.0.0"
+        },
+        "runtime": {
+          "Demographic.FileOperations.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Demographic.Exec/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Demographic/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Demographic.FileOperations/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

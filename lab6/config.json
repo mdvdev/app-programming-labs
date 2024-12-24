@@ -1,0 +1,7 @@
+{
+    "BirthProbability": 0.151,
+    "ChildGenderProbability": 0.55,
+    "ReproductiveAgeFemaleMin": 18,
+    "ReproductiveAgeFemaleMax": 45,
+    "SimulationStep": 1
+}

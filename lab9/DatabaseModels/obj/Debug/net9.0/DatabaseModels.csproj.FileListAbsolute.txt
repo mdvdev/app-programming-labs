@@ -1,0 +1,15 @@
+/Users/ana/projects/edu/app-prog-labs/lab9/DatabaseModels/bin/Debug/net9.0/DatabaseModels.deps.json
+/Users/ana/projects/edu/app-prog-labs/lab9/DatabaseModels/bin/Debug/net9.0/DatabaseModels.runtimeconfig.json
+/Users/ana/projects/edu/app-prog-labs/lab9/DatabaseModels/bin/Debug/net9.0/DatabaseModels.dll
+/Users/ana/projects/edu/app-prog-labs/lab9/DatabaseModels/bin/Debug/net9.0/DatabaseModels.pdb
+/Users/ana/projects/edu/app-prog-labs/lab9/DatabaseModels/obj/Debug/net9.0/DatabaseModels.csproj.AssemblyReference.cache
+/Users/ana/projects/edu/app-prog-labs/lab9/DatabaseModels/obj/Debug/net9.0/DatabaseModels.GeneratedMSBuildEditorConfig.editorconfig
+/Users/ana/projects/edu/app-prog-labs/lab9/DatabaseModels/obj/Debug/net9.0/DatabaseModels.AssemblyInfoInputs.cache
+/Users/ana/projects/edu/app-prog-labs/lab9/DatabaseModels/obj/Debug/net9.0/DatabaseModels.AssemblyInfo.cs
+/Users/ana/projects/edu/app-prog-labs/lab9/DatabaseModels/obj/Debug/net9.0/DatabaseModels.csproj.CoreCompileInputs.cache
+/Users/ana/projects/edu/app-prog-labs/lab9/DatabaseModels/obj/Debug/net9.0/DatabaseModels.sourcelink.json
+/Users/ana/projects/edu/app-prog-labs/lab9/DatabaseModels/obj/Debug/net9.0/DatabaseModels.dll
+/Users/ana/projects/edu/app-prog-labs/lab9/DatabaseModels/obj/Debug/net9.0/refint/DatabaseModels.dll
+/Users/ana/projects/edu/app-prog-labs/lab9/DatabaseModels/obj/Debug/net9.0/DatabaseModels.pdb
+/Users/ana/projects/edu/app-prog-labs/lab9/DatabaseModels/obj/Debug/net9.0/DatabaseModels.genruntimeconfig.cache
+/Users/ana/projects/edu/app-prog-labs/lab9/DatabaseModels/obj/Debug/net9.0/ref/DatabaseModels.dll

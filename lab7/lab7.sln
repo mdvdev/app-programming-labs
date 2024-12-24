@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Program.Exec", "Program.Exec\Program.Exec.csproj", "{223FBBC1-EB98-4D75-82F7-1D42931D9CC6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DevelopmentPipeline", "DevelopmentPipeline\DevelopmentPipeline.csproj", "{FC297272-D586-4414-A364-D79BF4B36732}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventLogger", "EventLogger\EventLogger.csproj", "{3D01D5B5-48EE-465D-BF11-061DFFE4C0C0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{223FBBC1-EB98-4D75-82F7-1D42931D9CC6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{223FBBC1-EB98-4D75-82F7-1D42931D9CC6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{223FBBC1-EB98-4D75-82F7-1D42931D9CC6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{223FBBC1-EB98-4D75-82F7-1D42931D9CC6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FC297272-D586-4414-A364-D79BF4B36732}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC297272-D586-4414-A364-D79BF4B36732}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC297272-D586-4414-A364-D79BF4B36732}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC297272-D586-4414-A364-D79BF4B36732}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3D01D5B5-48EE-465D-BF11-061DFFE4C0C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D01D5B5-48EE-465D-BF11-061DFFE4C0C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D01D5B5-48EE-465D-BF11-061DFFE4C0C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D01D5B5-48EE-465D-BF11-061DFFE4C0C0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

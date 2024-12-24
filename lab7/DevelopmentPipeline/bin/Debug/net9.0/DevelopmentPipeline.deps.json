@@ -1,0 +1,39 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v9.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v9.0": {
+      "DevelopmentPipeline/1.0.0": {
+        "dependencies": {
+          "EventLogger": "1.0.0"
+        },
+        "runtime": {
+          "DevelopmentPipeline.dll": {}
+        }
+      },
+      "EventLogger/1.0.0": {
+        "runtime": {
+          "EventLogger.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "DevelopmentPipeline/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "EventLogger/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

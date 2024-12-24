@@ -1,0 +1,67 @@
+1. K-Means (K-средний):
+
+
+Time complexity: O(n * k * d * i),
+where n - number of elements
+      k - number of clusters
+      d - space dimension
+      i - number of iteration
+
+
+2. Agglomerative Clustering (Иерархичная кластеризация):
+
+
+Time complexity: O(n^3)
+where n - number of elements
+Merge approaches: bottom-top, top-bottom
+Cluster distance approaches: min, max, mean
+
+
+3. Affinity Propagation (Распространения близости):
+
+
+Initizialize availability matrix to 0.
+
+1) Similarity matrix, where diagonal element contains his own preference
+to be exemplar (cluster mass center).
+S(i, j) = -distance(i, j).
+
+2) Responsibility matrix.
+R(i, j) = S(i, j) - max (A(i, k) + S(i, k)), where k != j.
+
+3) Availability matrix.
+A(i, j) = min (0, R(j, j) + sum (max (0, R(k, j)))), where k != i and k != j
+
+4) Iterations stops when matrices remain virtually unchanged.
+
+5) If R(i, i) + A(i, i) > 0 -- i is exemplar (cluster mass center).
+
+6) Each i point is attached to the j exemplar which sum R(i, j) + A(i, j) is maximal.
+
+
+4. MeanShift (Сдвиг среднего значения):
+
+
+1) Define bandwidth (radius).
+
+2) Each point is a center of cluster.
+
+3) For each point x:
+    3.1) Find all points in bandwidth area.
+    3.2) Define new x' (cluster center) position as mean between all points
+        in area.
+    3.3) Continue until x changes or x' - x is very small.
+
+4) Group all points which centers are the same.
+
+
+5. DBSCAN:
+
+Time complexity: O(n^2) or O(n * log(n)) using k-d-trees
+
+For each not visited point:
+1) If point P is a main point (eps-area contains >= minPts elems) then
+push P to new cluster.
+    1.1) For each point P' in eps-area of P: repeat 1) step
+2) Else P is a noise (later it can be inserted into the cluster)
+3) Dont forget to mark visited points.

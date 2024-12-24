@@ -1,0 +1,233 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/ana/projects/edu/app-prog-labs/lab6/Demographic.Exec/Demographic.Exec.csproj": {}
+  },
+  "projects": {
+    "/Users/ana/projects/edu/app-prog-labs/lab6/Demographic.Exec/Demographic.Exec.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/ana/projects/edu/app-prog-labs/lab6/Demographic.Exec/Demographic.Exec.csproj",
+        "projectName": "Demographic.Exec",
+        "projectPath": "/Users/ana/projects/edu/app-prog-labs/lab6/Demographic.Exec/Demographic.Exec.csproj",
+        "packagesPath": "/Users/ana/.nuget/packages/",
+        "outputPath": "/Users/ana/projects/edu/app-prog-labs/lab6/Demographic.Exec/obj/",
+        "projectStyle": "PackageReference",
+        "UsingMicrosoftNETSdk": false,
+        "configFilePaths": [
+          "/Users/ana/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "/usr/local/Cellar/dotnet/9.0.101/libexec/library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/Users/ana/projects/edu/app-prog-labs/lab6/Demographic.FileOperations/Demographic.FileOperations.csproj": {
+                "projectPath": "/Users/ana/projects/edu/app-prog-labs/lab6/Demographic.FileOperations/Demographic.FileOperations.csproj"
+              },
+              "/Users/ana/projects/edu/app-prog-labs/lab6/Demographic/Demographic.csproj": {
+                "projectPath": "/Users/ana/projects/edu/app-prog-labs/lab6/Demographic/Demographic.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[8.0.11, 8.0.11]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.osx-x64",
+              "version": "[8.0.11, 8.0.11]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[8.0.11, 8.0.11]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/Cellar/dotnet/9.0.101/libexec/sdk/9.0.101/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/ana/projects/edu/app-prog-labs/lab6/Demographic.FileOperations/Demographic.FileOperations.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/ana/projects/edu/app-prog-labs/lab6/Demographic.FileOperations/Demographic.FileOperations.csproj",
+        "projectName": "Demographic.FileOperations",
+        "projectPath": "/Users/ana/projects/edu/app-prog-labs/lab6/Demographic.FileOperations/Demographic.FileOperations.csproj",
+        "packagesPath": "/Users/ana/.nuget/packages/",
+        "outputPath": "/Users/ana/projects/edu/app-prog-labs/lab6/Demographic.FileOperations/obj/",
+        "projectStyle": "PackageReference",
+        "UsingMicrosoftNETSdk": false,
+        "configFilePaths": [
+          "/Users/ana/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "/usr/local/Cellar/dotnet/9.0.101/libexec/library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/Users/ana/projects/edu/app-prog-labs/lab6/Demographic/Demographic.csproj": {
+                "projectPath": "/Users/ana/projects/edu/app-prog-labs/lab6/Demographic/Demographic.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[8.0.11, 8.0.11]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[8.0.11, 8.0.11]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/Cellar/dotnet/9.0.101/libexec/sdk/9.0.101/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/ana/projects/edu/app-prog-labs/lab6/Demographic/Demographic.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/ana/projects/edu/app-prog-labs/lab6/Demographic/Demographic.csproj",
+        "projectName": "Demographic",
+        "projectPath": "/Users/ana/projects/edu/app-prog-labs/lab6/Demographic/Demographic.csproj",
+        "packagesPath": "/Users/ana/.nuget/packages/",
+        "outputPath": "/Users/ana/projects/edu/app-prog-labs/lab6/Demographic/obj/",
+        "projectStyle": "PackageReference",
+        "UsingMicrosoftNETSdk": false,
+        "configFilePaths": [
+          "/Users/ana/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "/usr/local/Cellar/dotnet/9.0.101/libexec/library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[8.0.11, 8.0.11]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[8.0.11, 8.0.11]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/Cellar/dotnet/9.0.101/libexec/sdk/9.0.101/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

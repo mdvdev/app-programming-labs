@@ -1,0 +1,12 @@
+/Users/ana/projects/edu/app-prog-labs/lab7/EventLogger/bin/Debug/net9.0/EventLogger.deps.json
+/Users/ana/projects/edu/app-prog-labs/lab7/EventLogger/bin/Debug/net9.0/EventLogger.dll
+/Users/ana/projects/edu/app-prog-labs/lab7/EventLogger/bin/Debug/net9.0/EventLogger.pdb
+/Users/ana/projects/edu/app-prog-labs/lab7/EventLogger/obj/Debug/net9.0/EventLogger.GeneratedMSBuildEditorConfig.editorconfig
+/Users/ana/projects/edu/app-prog-labs/lab7/EventLogger/obj/Debug/net9.0/EventLogger.AssemblyInfoInputs.cache
+/Users/ana/projects/edu/app-prog-labs/lab7/EventLogger/obj/Debug/net9.0/EventLogger.AssemblyInfo.cs
+/Users/ana/projects/edu/app-prog-labs/lab7/EventLogger/obj/Debug/net9.0/EventLogger.csproj.CoreCompileInputs.cache
+/Users/ana/projects/edu/app-prog-labs/lab7/EventLogger/obj/Debug/net9.0/EventLogger.sourcelink.json
+/Users/ana/projects/edu/app-prog-labs/lab7/EventLogger/obj/Debug/net9.0/EventLogger.dll
+/Users/ana/projects/edu/app-prog-labs/lab7/EventLogger/obj/Debug/net9.0/refint/EventLogger.dll
+/Users/ana/projects/edu/app-prog-labs/lab7/EventLogger/obj/Debug/net9.0/EventLogger.pdb
+/Users/ana/projects/edu/app-prog-labs/lab7/EventLogger/obj/Debug/net9.0/ref/EventLogger.dll

@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "Bzma1fyTDqE=",
+  "success": true,
+  "projectFilePath": "/Users/ana/projects/edu/app-prog-labs/lab6/Demographic.Exec/Demographic.Exec.csproj",
+  "expectedPackageFiles": [
+    "/Users/ana/.nuget/packages/microsoft.netcore.app.ref/8.0.11/microsoft.netcore.app.ref.8.0.11.nupkg.sha512",
+    "/Users/ana/.nuget/packages/microsoft.aspnetcore.app.ref/8.0.11/microsoft.aspnetcore.app.ref.8.0.11.nupkg.sha512",
+    "/Users/ana/.nuget/packages/microsoft.netcore.app.host.osx-x64/8.0.11/microsoft.netcore.app.host.osx-x64.8.0.11.nupkg.sha512"
+  ],
+  "logs": []
+}

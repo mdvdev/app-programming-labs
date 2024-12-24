@@ -1,0 +1,16 @@
+/Users/ana/projects/edu/app-prog-labs/lab7/DevelopmentPipeline/bin/Debug/net9.0/DevelopmentPipeline.deps.json
+/Users/ana/projects/edu/app-prog-labs/lab7/DevelopmentPipeline/bin/Debug/net9.0/DevelopmentPipeline.dll
+/Users/ana/projects/edu/app-prog-labs/lab7/DevelopmentPipeline/bin/Debug/net9.0/DevelopmentPipeline.pdb
+/Users/ana/projects/edu/app-prog-labs/lab7/DevelopmentPipeline/bin/Debug/net9.0/EventLogger.dll
+/Users/ana/projects/edu/app-prog-labs/lab7/DevelopmentPipeline/bin/Debug/net9.0/EventLogger.pdb
+/Users/ana/projects/edu/app-prog-labs/lab7/DevelopmentPipeline/obj/Debug/net9.0/DevelopmentPipeline.csproj.AssemblyReference.cache
+/Users/ana/projects/edu/app-prog-labs/lab7/DevelopmentPipeline/obj/Debug/net9.0/DevelopmentPipeline.GeneratedMSBuildEditorConfig.editorconfig
+/Users/ana/projects/edu/app-prog-labs/lab7/DevelopmentPipeline/obj/Debug/net9.0/DevelopmentPipeline.AssemblyInfoInputs.cache
+/Users/ana/projects/edu/app-prog-labs/lab7/DevelopmentPipeline/obj/Debug/net9.0/DevelopmentPipeline.AssemblyInfo.cs
+/Users/ana/projects/edu/app-prog-labs/lab7/DevelopmentPipeline/obj/Debug/net9.0/DevelopmentPipeline.csproj.CoreCompileInputs.cache
+/Users/ana/projects/edu/app-prog-labs/lab7/DevelopmentPipeline/obj/Debug/net9.0/DevelopmentPipeline.sourcelink.json
+/Users/ana/projects/edu/app-prog-labs/lab7/DevelopmentPipeline/obj/Debug/net9.0/Developm.2573CA84.Up2Date
+/Users/ana/projects/edu/app-prog-labs/lab7/DevelopmentPipeline/obj/Debug/net9.0/DevelopmentPipeline.dll
+/Users/ana/projects/edu/app-prog-labs/lab7/DevelopmentPipeline/obj/Debug/net9.0/refint/DevelopmentPipeline.dll
+/Users/ana/projects/edu/app-prog-labs/lab7/DevelopmentPipeline/obj/Debug/net9.0/DevelopmentPipeline.pdb
+/Users/ana/projects/edu/app-prog-labs/lab7/DevelopmentPipeline/obj/Debug/net9.0/ref/DevelopmentPipeline.dll

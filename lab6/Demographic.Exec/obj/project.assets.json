@@ -1,0 +1,132 @@
+{
+  "version": 3,
+  "targets": {
+    "net8.0": {
+      "Demographic/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/Demographic.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Demographic.dll": {}
+        }
+      },
+      "Demographic.FileOperations/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "Demographic": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Demographic.FileOperations.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Demographic.FileOperations.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Demographic/1.0.0": {
+      "type": "project",
+      "path": "../Demographic/Demographic.csproj",
+      "msbuildProject": "../Demographic/Demographic.csproj"
+    },
+    "Demographic.FileOperations/1.0.0": {
+      "type": "project",
+      "path": "../Demographic.FileOperations/Demographic.FileOperations.csproj",
+      "msbuildProject": "../Demographic.FileOperations/Demographic.FileOperations.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net8.0": [
+      "Demographic >= 1.0.0",
+      "Demographic.FileOperations >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "/Users/ana/.nuget/packages/": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "/Users/ana/projects/edu/app-prog-labs/lab6/Demographic.Exec/Demographic.Exec.csproj",
+      "projectName": "Demographic.Exec",
+      "projectPath": "/Users/ana/projects/edu/app-prog-labs/lab6/Demographic.Exec/Demographic.Exec.csproj",
+      "packagesPath": "/Users/ana/.nuget/packages/",
+      "outputPath": "/Users/ana/projects/edu/app-prog-labs/lab6/Demographic.Exec/obj/",
+      "projectStyle": "PackageReference",
+      "UsingMicrosoftNETSdk": false,
+      "configFilePaths": [
+        "/Users/ana/.nuget/NuGet/NuGet.Config"
+      ],
+      "originalTargetFrameworks": [
+        "net8.0"
+      ],
+      "sources": {
+        "/usr/local/Cellar/dotnet/9.0.101/libexec/library-packs": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "projectReferences": {
+            "/Users/ana/projects/edu/app-prog-labs/lab6/Demographic.FileOperations/Demographic.FileOperations.csproj": {
+              "projectPath": "/Users/ana/projects/edu/app-prog-labs/lab6/Demographic.FileOperations/Demographic.FileOperations.csproj"
+            },
+            "/Users/ana/projects/edu/app-prog-labs/lab6/Demographic/Demographic.csproj": {
+              "projectPath": "/Users/ana/projects/edu/app-prog-labs/lab6/Demographic/Demographic.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
+      }
+    },
+    "frameworks": {
+      "net8.0": {
+        "targetAlias": "net8.0",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[8.0.11, 8.0.11]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Host.osx-x64",
+            "version": "[8.0.11, 8.0.11]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Ref",
+            "version": "[8.0.11, 8.0.11]"
+          }
+        ],
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "/usr/local/Cellar/dotnet/9.0.101/libexec/sdk/9.0.101/PortableRuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}
